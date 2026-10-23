@@ -1,0 +1,15 @@
+{
+  "name": "ultimo-abrigo-backend",
+  "version": "1.0.0",
+  "description": "Servidor do Último Abrigo: entrega o jogo e guarda o ranking de pontuações",
+  "main": "server.js",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test testes/api.test.js"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "license": "UNLICENSED"
+}
