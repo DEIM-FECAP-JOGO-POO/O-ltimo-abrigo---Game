@@ -3,7 +3,7 @@
 Jogo de plataforma 2D em **JavaScript puro com `<canvas>`**, feito para a disciplina de **Programação Orientada a Objetos (NI1)**.
 Um herói foge de uma horda de zumbis e precisa chegar ao abrigo no fim de cada fase. O jogo não usa nenhuma biblioteca e todos os gráficos são desenhados por código.
 
-![Tela inicial do Último Abrigo](docs/imagens/menu.png)
+![Tela inicial do Último Abrigo](Imagens/menu.png)
 
 ## Sobre o jogo
 
@@ -19,9 +19,9 @@ A cidade caiu e a horda avança sem parar atrás de você. Corra, pule buracos e
 
 | Fase 1 · Rua Deserta | Combate com a barra de ferro |
 | --- | --- |
-| ![Herói na fase 1 com um zumbi caçador, uma barricada e um kit médico](docs/imagens/fase1.png) | ![Herói golpeando um zumbi caçador](docs/imagens/combate.png) |
+| ![Herói na fase 1 com um zumbi caçador, uma barricada e um kit médico](Imagens/fase1.png) | ![Herói golpeando um zumbi caçador](Imagens/combate.png) |
 | **Zumbi saltando uma barricada** | **Adrenalina ativa** |
-| ![Zumbi caçador saltando sobre uma barricada](docs/imagens/zumbi-salto.png) | ![Herói com a aura da adrenalina](docs/imagens/adrenalina.png) |
+| ![Zumbi caçador saltando sobre uma barricada](Imagens/zumbi-salto.png) | ![Herói com a aura da adrenalina](Imagens/adrenalina.png) |
 
 ## Controles
 
