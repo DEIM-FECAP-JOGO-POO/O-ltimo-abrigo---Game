@@ -137,12 +137,12 @@ O desenvolvimento usou duas ferramentas de IA, como pede a avaliação: **Claude
 
 ## Equipe
 
-| Integrante | Contribuição |
+| Integrante | 
 | --- | --- |
-| [nome 1] | [contribuição] |
-| [nome 2] | [contribuição] |
-| [nome 3] | [contribuição] |
-| [nome 4] | [contribuição] |
+| Enzo Lemos | 
+| Igor Araújo | 
+| Mateus Lima | 
+| Daniel Câmara | 
 
 ## Créditos
 
