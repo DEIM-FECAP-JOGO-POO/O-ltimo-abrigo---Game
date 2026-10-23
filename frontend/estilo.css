@@ -1,0 +1,131 @@
+body {
+  margin: 0;
+  background: #0a0a10;
+  color: #e0e6f0;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+}
+
+main {
+  text-align: center;
+  padding: 12px;
+  width: 100%;
+  max-width: 860px;
+}
+
+h1 {
+  margin: 6px 0 10px;
+  font-size: 1.5rem;
+  letter-spacing: 6px;
+  color: #ef5350;
+}
+
+canvas {
+  width: 100%;
+  max-width: 800px;
+  background: #05060d;
+  border: 2px solid #5b2a2a;
+  border-radius: 6px;
+}
+
+.ajuda {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  line-height: 1.6;
+}
+
+/* NOVO (backend): painel do ranking, abaixo do jogo */
+.ranking {
+  max-width: 800px;
+  margin: 8px auto 24px;
+  padding: 14px 16px;
+  text-align: left;
+  background: #14121c;
+  border: 1px solid #2c2433;
+  border-radius: 6px;
+}
+
+.ranking-topo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px 16px;
+}
+
+.ranking h2 {
+  margin: 0;
+  font-size: 1.05rem;
+  letter-spacing: 3px;
+  color: #f2b33d;
+  text-transform: uppercase;
+}
+
+.ranking label {
+  font-size: 0.85rem;
+}
+
+.ranking input {
+  margin-left: 6px;
+  padding: 4px 8px;
+  width: 160px;
+  background: #0a0a10;
+  color: #e0e6f0;
+  border: 1px solid #5b2a2a;
+  border-radius: 4px;
+  font: inherit;
+}
+
+#ranking-status {
+  font-size: 0.8rem;
+  color: #9e96a8;
+}
+
+#ranking-status[data-online="true"] {
+  color: #69f0ae;
+}
+
+.ranking-abas {
+  display: flex;
+  gap: 6px;
+  margin: 12px 0 8px;
+}
+
+.ranking-abas button {
+  padding: 4px 12px;
+  background: transparent;
+  color: #cfc8d6;
+  border: 1px solid #3a3242;
+  border-radius: 999px;
+  font: inherit;
+  font-size: 0.8rem;
+  cursor: pointer;
+}
+
+.ranking-abas button[aria-pressed="true"] {
+  background: #5b2a2a;
+  border-color: #ef5350;
+  color: #ffffff;
+}
+
+#ranking-lista {
+  margin: 0;
+  padding-left: 1.6em;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+
+#ranking-lista li .nome {
+  font-weight: bold;
+}
+
+#ranking-lista li .pontos {
+  float: right;
+  color: #f2b33d;
+}
+
+#ranking-lista li.vazio {
+  list-style: none;
+  margin-left: -1.6em;
+  color: #9e96a8;
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Último Abrigo - Projeto POO</title>
+  <!-- Endereço da API do ranking (pasta backend). Vazio = o mesmo endereço desta página.
+       Ex.: se o backend estiver publicado em outro lugar, coloque aqui a URL dele. -->
+  <meta name="ranking-api" content="">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <main>
+    <h1>ÚLTIMO ABRIGO</h1>
+    <!-- Todo o jogo é desenhado neste canvas (800 x 450) pela classe Jogo -->
+    <canvas id="tela" width="800" height="450"></canvas>
+    <!-- Lembrete dos controles (a lógica das teclas fica em Jogo.js) -->
+    <p class="ajuda">
+      <b>← →</b> ou <b>A D</b>: correr &nbsp;|&nbsp;
+      <b>Espaço</b>, <b>↑</b> ou <b>W</b>: pular &nbsp;|&nbsp;
+      <b>J</b> ou <b>X</b>: golpear &nbsp;|&nbsp;
+      <b>Shift</b> ou <b>K</b>: adrenalina &nbsp;|&nbsp;
+      <b>P</b>: pausar &nbsp;|&nbsp; <b>R</b>: reiniciar fase &nbsp;|&nbsp; <b>Esc</b>: menu
+    </p>
+
+    <!-- NOVO (backend): ranking. A lista vem do servidor; a lógica fica em PainelRanking.js -->
+    <section class="ranking" aria-labelledby="titulo-ranking">
+      <div class="ranking-topo">
+        <h2 id="titulo-ranking">Ranking</h2>
+        <label>Seu nome <input id="nome-jogador" type="text" maxlength="20" placeholder="Anônimo" autocomplete="off"></label>
+        <span id="ranking-status" role="status"></span>
+      </div>
+      <div class="ranking-abas">
+        <button type="button" data-fase-ranking="1">Fase 1</button>
+        <button type="button" data-fase-ranking="2">Fase 2</button>
+        <button type="button" data-fase-ranking="3">Fase 3</button>
+      </div>
+      <ol id="ranking-lista"></ol>
+    </section>
+  </main>
+
+  <!-- Ordem importa: classes base primeiro, depois as que herdam delas -->
+  <!-- Utilitárias (só métodos estáticos) -->
+  <script src="js/Desenho.js"></script>
+  <script src="js/Fisica.js"></script>
+
+  <!-- Entidade e o herói -->
+  <script src="js/Entidade.js"></script>
+  <script src="js/Jogador.js"></script>
+  <script src="js/Horda.js"></script>
+  <script src="js/Abrigo.js"></script>
+
+  <!-- Itens: Item é a base de Remedio e Energetico -->
+  <script src="js/Item.js"></script>
+  <script src="js/Remedio.js"></script>
+  <script src="js/Energetico.js"></script>
+
+  <!-- Obstáculos: Obstaculo é a base de todos os outros -->
+  <script src="js/Obstaculo.js"></script>
+  <script src="js/Chao.js"></script>
+  <script src="js/Barricada.js"></script>
+  <script src="js/PlataformaMovel.js"></script>
+  <script src="js/PlataformaQuebradica.js"></script>
+  <script src="js/Espinho.js"></script>
+  <script src="js/ZumbiPatrulha.js"></script>
+  <script src="js/ZumbiCacador.js"></script>
+
+  <!-- Fases: Fase é a base de FaseFacil, FaseMedia e FaseDificil -->
+  <script src="js/Cenario.js"></script>
+  <script src="js/Diretor.js"></script>
+  <script src="js/Fase.js"></script>
+  <script src="js/FaseFacil.js"></script>
+  <script src="js/FaseMedia.js"></script>
+  <script src="js/FaseDificil.js"></script>
+
+  <!-- NOVO (backend): cliente da API do ranking e painel da página -->
+  <script src="js/Ranking.js"></script>
+  <script src="js/PainelRanking.js"></script>
+
+  <!-- Telas, HUD, efeitos e, por último, o Jogo (que usa todas as outras) -->
+  <script src="js/Efeitos.js"></script>
+  <script src="js/Tela.js"></script>
+  <script src="js/Hud.js"></script>
+  <script src="js/Jogo.js"></script>
+</body>
+</html>
